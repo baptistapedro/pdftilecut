@@ -1,0 +1,5 @@
+project: pdftilecut
+target: pdftilecut
+cmds:
+  - cmd: /pdftilecut -tile-size A4 -in @@ -out /dev/null
+    env: {}

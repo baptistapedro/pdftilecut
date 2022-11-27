@@ -1,5 +1,5 @@
 FROM golang:1.19.1-buster as go-target
-RUN apt-get update && apt-get install -y build-essential coreutils autogen yasm git cmake make wget
+RUN apt-get update && apt-get install -y build-essential coreutils autogen yasm git cmake make automake autotools-dev wget
 ADD . /pdftilecut
 WORKDIR /pdftilecut
 RUN make
